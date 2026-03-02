@@ -52,10 +52,10 @@ const HeroSection = () => {
               <a href="mailto:sanjana.dhage05@gmail.com" className="p-2 text-muted-foreground hover:text-foreground transition-colors" aria-label="Email">
                 <Mail size={22} />
               </a>
-              <a href="https://www.linkedin.com/in/sanjana-dhage/" target="_blank" rel="noopener noreferrer" className="p-2 text-muted-foreground hover:text-foreground transition-colors" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/sanjana-dhage-99b11925a/" target="_blank" rel="noopener noreferrer" className="p-2 text-muted-foreground hover:text-foreground transition-colors" aria-label="LinkedIn">
                 <Linkedin size={22} />
               </a>
-              <a href="https://github.com/SanjanaDhage" target="_blank" rel="noopener noreferrer" className="p-2 text-muted-foreground hover:text-foreground transition-colors" aria-label="GitHub">
+              <a href="https://github.com/SANJANA-DHAGE05/" target="_blank" rel="noopener noreferrer" className="p-2 text-muted-foreground hover:text-foreground transition-colors" aria-label="GitHub">
                 <Github size={22} />
               </a>
             </div>
