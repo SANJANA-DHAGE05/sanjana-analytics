@@ -64,17 +64,16 @@ const HeroSection = () => {
           {/* Image */}
           <div className="flex-shrink-0 animate-fade-up" style={{ animationDelay: "0.3s" }}>
             <div className="relative">
-              <div className="w-72 h-80 md:w-96 md:h-[28rem] rounded-2xl overflow-hidden border-2 border-primary/20 shadow-2xl shadow-primary/10">
+              <div className="w-72 h-80 md:w-96 md:h-[28rem] rounded-2xl overflow-hidden border border-border shadow-[0_20px_60px_-15px_rgba(0,0,0,0.4)]">
                 <img
                   src={profileImg}
                   alt="Sanjana Dhage - Data Analyst"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
-              <div className="absolute -bottom-3 -right-3 w-full h-full rounded-2xl border-2 border-primary/10 -z-10" />
-              {/* Decorative dots */}
-              <div className="absolute -top-2 -right-2 w-3 h-3 rounded-full bg-primary/60" />
-              <div className="absolute bottom-8 -left-2 w-2 h-2 rounded-full bg-primary/40" />
+              <div className="absolute -bottom-3 -right-3 w-full h-full rounded-2xl border border-primary/15 -z-10" />
+              <div className="absolute -top-2 -right-2 w-3 h-3 rounded-full bg-primary/50" />
+              <div className="absolute bottom-8 -left-2 w-2 h-2 rounded-full bg-primary/30" />
             </div>
           </div>
         </div>
