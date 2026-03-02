@@ -16,7 +16,7 @@ const HeroSection = () => {
               <span className="w-6 h-0.5 bg-primary inline-block" />
               Introduction
             </p>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 animate-fade-up text-secondary" style={{ animationDelay: "0.2s" }}>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 animate-fade-up text-secondary lg:text-6xl" style={{ animationDelay: "0.2s" }}>
               Sanjana <span className="hero-gradient-text">Dhage.</span>
             </h1>
             <div className="w-12 h-1 bg-primary mb-6 mx-auto lg:mx-0 animate-fade-up" style={{ animationDelay: "0.25s" }} />
