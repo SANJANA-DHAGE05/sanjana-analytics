@@ -13,7 +13,7 @@ const AboutSection = () => {
         </div>
 
         <div className={`max-w-4xl mx-auto opacity-0 ${isVisible ? "animate-fade-up" : ""}`} style={{ animationDelay: "0.2s" }}>
-          <div className="glass-card">
+          <div className="glass-card text-sidebar-primary">
             <p className="text-muted-foreground leading-relaxed mb-6 text-base">
               I am a detail-oriented Data Analyst skilled in transforming complex data into actionable business
               insights. With expertise in SQL, Python, and Power BI, I build end-to-end analytics solutions — from
@@ -32,7 +32,7 @@ const AboutSection = () => {
                   <BarChart3 size={20} />
                 </div>
                 <div>
-                  <h4 className="font-display font-semibold text-sm mb-1 text-secondary">Analytics & BI</h4>
+                  <h4 className="font-display font-semibold text-sm mb-1 text-sidebar-primary">Analytics & BI</h4>
                   <p className="text-xs text-muted-foreground">End-to-end KPI dashboards & data pipelines</p>
                 </div>
               </div>

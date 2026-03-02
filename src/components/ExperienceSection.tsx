@@ -17,7 +17,7 @@ const ExperienceSection = () => {
               <Briefcase size={24} />
             </div>
             <div>
-              <h3 className="font-display font-semibold text-xl text-secondary">AI & Machine Learning Intern</h3>
+              <h3 className="font-display font-semibold text-xl text-sidebar-primary">AI & Machine Learning Intern</h3>
               <p className="text-primary font-medium mb-1">Zeel Code</p>
               <p className="text-sm text-muted-foreground mb-4">Belgaum, Karnataka · Jan 2025 – Apr 2025</p>
               <ul className="space-y-2">
