@@ -16,7 +16,7 @@ const HeroSection = () => {
               <span className="w-6 h-0.5 bg-primary inline-block" />
               Introduction
             </p>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 animate-fade-up" style={{ animationDelay: "0.2s" }}>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 animate-fade-up text-secondary" style={{ animationDelay: "0.2s" }}>
               Sanjana <span className="hero-gradient-text">Dhage.</span>
             </h1>
             <div className="w-12 h-1 bg-primary mb-6 mx-auto lg:mx-0 animate-fade-up" style={{ animationDelay: "0.25s" }} />
@@ -34,15 +34,15 @@ const HeroSection = () => {
             <div className="flex flex-wrap gap-3 justify-center lg:justify-start mb-6 animate-fade-up" style={{ animationDelay: "0.5s" }}>
               <a
                 href="#projects"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
-              >
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity">
+
                 View My Work <ArrowRight size={16} />
               </a>
               <a
                 href={resumePdf}
                 download="Sanjana_Dhage_Resume.pdf"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-primary text-primary font-medium hover:bg-primary/10 transition-colors"
-              >
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-primary text-primary font-medium hover:bg-primary/10 transition-colors">
+
                 <Download size={16} /> Download CV
               </a>
             </div>
@@ -68,8 +68,8 @@ const HeroSection = () => {
                 <img
                   src={profileImg}
                   alt="Sanjana Dhage - Data Analyst"
-                  className="w-full h-full object-cover object-top"
-                />
+                  className="w-full h-full object-cover object-top" />
+
               </div>
               <div className="absolute -bottom-3 -right-3 w-full h-full rounded-2xl border border-primary/15 -z-10" />
               <div className="absolute -top-2 -right-2 w-3 h-3 rounded-full bg-primary/50" />
@@ -78,8 +78,8 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;

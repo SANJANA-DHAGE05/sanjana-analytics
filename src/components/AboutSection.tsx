@@ -32,7 +32,7 @@ const AboutSection = () => {
                   <BarChart3 size={20} />
                 </div>
                 <div>
-                  <h4 className="font-display font-semibold text-sm mb-1">Analytics & BI</h4>
+                  <h4 className="font-display font-semibold text-sm mb-1 text-secondary">Analytics & BI</h4>
                   <p className="text-xs text-muted-foreground">End-to-end KPI dashboards & data pipelines</p>
                 </div>
               </div>
@@ -58,8 +58,8 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default AboutSection;
