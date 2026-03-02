@@ -1,47 +1,49 @@
 import { useScrollReveal } from "./useScrollReveal";
-import { BarChart3, Brain, Database, Wrench } from "lucide-react";
+import { BarChart3, Brain, Code, Wrench } from "lucide-react";
 
 interface SkillCategory {
   icon: React.ReactNode;
   title: string;
-  skills: { name: string; level: number }[];
+  skills: string[];
 }
 
 const categories: SkillCategory[] = [
   {
-    icon: <Database size={24} />,
+    icon: <Code size={24} />,
     title: "Data Analysis & Programming",
     skills: [
-      { name: "Python (Pandas, NumPy, Matplotlib, Seaborn)", level: 90 },
-      { name: "SQL (Joins, CTEs, Subqueries, Window Functions)", level: 92 },
-      { name: "Statistical Analysis", level: 85 },
+      "Python (Pandas, NumPy, Matplotlib, Seaborn)",
+      "SQL (Joins, CTEs, Subqueries, Window Functions)",
+      "Statistical Analysis",
     ],
   },
   {
     icon: <BarChart3 size={24} />,
     title: "BI & Visualization",
     skills: [
-      { name: "Power BI (DAX, Data Modeling, Power Query)", level: 90 },
-      { name: "Tableau", level: 80 },
-      { name: "Dashboard Design", level: 88 },
+      "Power BI (DAX, Data Modeling, Power Query)",
+      "Tableau",
+      "Dashboard Design",
     ],
   },
   {
     icon: <Brain size={24} />,
     title: "Machine Learning & Analytics",
     skills: [
-      { name: "Scikit-learn", level: 82 },
-      { name: "Random Forest & Logistic Regression", level: 80 },
-      { name: "Feature Engineering & ETL Pipelines", level: 85 },
+      "Scikit-learn",
+      "Random Forest & Logistic Regression",
+      "Feature Engineering",
+      "ETL Pipelines",
     ],
   },
   {
     icon: <Wrench size={24} />,
     title: "Tools",
     skills: [
-      { name: "Excel (Pivot Tables, Automation)", level: 88 },
-      { name: "Git & GitHub", level: 82 },
-      { name: "Streamlit & Jupyter Notebook", level: 85 },
+      "Excel (Pivot Tables, Automation)",
+      "Git & GitHub",
+      "Streamlit",
+      "Jupyter Notebook",
     ],
   },
 ];
@@ -59,20 +61,9 @@ const SkillCard = ({ cat, delay }: { cat: SkillCategory; delay: number }) => {
         <div className="p-2.5 rounded-lg bg-primary/10 text-primary">{cat.icon}</div>
         <h3 className="font-display font-semibold text-lg">{cat.title}</h3>
       </div>
-      <div className="space-y-4">
+      <div className="flex flex-wrap gap-2.5">
         {cat.skills.map((skill) => (
-          <div key={skill.name}>
-            <div className="flex justify-between text-sm mb-1.5">
-              <span className="text-foreground">{skill.name}</span>
-              <span className="text-muted-foreground">{skill.level}%</span>
-            </div>
-            <div className="h-2 rounded-full bg-secondary overflow-hidden">
-              <div
-                className={`h-full rounded-full skill-bar-fill ${isVisible ? "animate-bar-fill" : "w-0"}`}
-                style={{ "--bar-width": `${skill.level}%` } as React.CSSProperties}
-              />
-            </div>
-          </div>
+          <span key={skill} className="tech-tag">{skill}</span>
         ))}
       </div>
     </div>
