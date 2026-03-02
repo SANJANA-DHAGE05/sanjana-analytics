@@ -59,7 +59,7 @@ const SkillCard = ({ cat, delay }: {cat: SkillCategory;delay: number;}) => {
 
       <div className="flex items-center gap-3 mb-6">
         <div className="p-2.5 rounded-lg bg-primary/10 text-primary">{cat.icon}</div>
-        <h3 className="font-display font-semibold text-lg text-secondary">{cat.title}</h3>
+        <h3 className="font-display font-semibold text-lg text-sidebar-primary">{cat.title}</h3>
       </div>
       <div className="flex flex-wrap gap-2.5">
         {cat.skills.map((skill) =>

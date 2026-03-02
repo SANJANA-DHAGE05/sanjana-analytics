@@ -41,7 +41,7 @@ const AboutSection = () => {
                   <TrendingUp size={20} />
                 </div>
                 <div>
-                  <h4 className="font-display font-semibold text-sm mb-1 text-secondary">Predictive Modeling</h4>
+                  <h4 className="font-display font-semibold text-sm mb-1 text-sidebar-primary">Predictive Modeling</h4>
                   <p className="text-xs text-muted-foreground">ML models with 84%–88% accuracy</p>
                 </div>
               </div>
@@ -50,7 +50,7 @@ const AboutSection = () => {
                   <Target size={20} />
                 </div>
                 <div>
-                  <h4 className="font-display font-semibold text-sm mb-1 text-secondary">Business Impact</h4>
+                  <h4 className="font-display font-semibold text-sm mb-1 text-sidebar-primary">Business Impact</h4>
                   <p className="text-xs text-muted-foreground">Data-driven strategic recommendations</p>
                 </div>
               </div>
