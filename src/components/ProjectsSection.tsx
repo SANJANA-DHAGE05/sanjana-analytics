@@ -63,7 +63,7 @@ const ProjectCard = ({ project, index }: {project: Project;index: number;}) => {
       style={{ animationDelay: `${0.15 * (index + 1)}s` }}>
 
       <div className="flex items-start justify-between mb-4">
-        <h3 className="font-display font-semibold text-xl leading-tight pr-4 text-secondary">{project.title}</h3>
+        <h3 className="font-display font-semibold text-xl leading-tight pr-4 text-sidebar-primary">{project.title}</h3>
         {project.github &&
         <a
           href={project.github}
