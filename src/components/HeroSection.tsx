@@ -1,6 +1,6 @@
 import { Github, Linkedin, Download, ArrowRight, Mail } from "lucide-react";
 import profileImg from "@/assets/sanjana-profile.jpeg";
-import resumePdf from "@/assets/Sanjana_DataAnalyst.pdf";
+import resumePdf from "@/assets/Sanjana_DataAnalyst_Updated.pdf";
 
 const HeroSection = () => {
   return (
@@ -39,8 +39,8 @@ const HeroSection = () => {
                 View My Work <ArrowRight size={16} />
               </a>
               <a
-                href={resumePdf}
-                download="Sanjana_DataAnalyst.pdf"
+                href={`${resumePdf}?v=20260329`}
+                download="Sanjana_DataAnalyst_Updated.pdf"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-primary text-primary font-medium hover:bg-primary/10 transition-colors">
 
                 <Download size={16} /> Download CV
